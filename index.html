@@ -60,12 +60,19 @@
             display: flex;
         }
 
-        .menu-overlay a {
+        .menu-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menu-items a {
             display: block;
             color: #fff;
             font-size: 24px;
             margin-bottom: 10px;
-            text-align: center;
             text-decoration: none;
         }
     </style>
@@ -81,9 +88,11 @@
     </div>
 
     <div class="menu-overlay">
-        <a href="#">Menu Item 1</a>
-        <a href="#">Menu Item 2</a>
-        <a href="#">Menu Item 3</a>
+        <div class="menu-items">
+            <a href="#">Menu Item 1</a>
+            <a href="#">Menu Item 2</a>
+            <a href="#">Menu Item 3</a>
+        </div>
     </div>
 
     <script>
