@@ -1,7 +1,7 @@
 {
   "name": "Grow (Doing it together)",
   "short_name": "Grow",
-  "display": "standalone",
+  "display": "fullscreen",
   "start_url": "/",
   "icons": [
     {

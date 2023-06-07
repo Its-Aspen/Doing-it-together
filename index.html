@@ -2,14 +2,34 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+    <meta name="apple-mobile-web-app-title" content="Grow">  
+
     <title>Grow (Doing it together)</title>
+
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="\add-to-homescreen\style\addtohomescreen.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="512x512" href="favicon.ico">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
+    <script src="add-to-homescreen\src\addtohomescreen.js"></script>
+    
+    <script>
+        if (
+            (("standalone" in window.navigator) && !window.navigator.standalone) //ios
+            ||
+            (!window.matchMedia('(display-mode: standalone)').matches ) //android
+        ){
+            addToHomeScreen();
+        }
+    </script>
     <style>
         /* Styles for the menu icon container */
         .container {
