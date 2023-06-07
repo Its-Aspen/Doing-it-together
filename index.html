@@ -1,4 +1,4 @@
-@@ -1,175 +1,175 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -75,15 +75,15 @@
 
         /* Styles for the overlay menu */
         .overlay-menu {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 75%;
-            height: 100%;
-            background-color: white;
-            display: none;
-            justify-content: center;
-            align-items: center;
+        position: fixed;
+        top: 70px; /* Adjust the top value as needed to align the menu with the button */
+        right: 0;
+        width: 75%;
+        height: 100%;
+        background-color: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
         }
 
         .menu-content {
@@ -118,12 +118,10 @@
         <h1 class="header-title">Header</h1>
 
         <!-- Menu icon container -->
-        <div class="container" onclick="toggleMenu()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </div>
+<div class="container" onclick="toggleMenu()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
 
     <!-- Overlay menu section -->
     <div id="overlayMenu" class="overlay-menu">
@@ -135,7 +133,8 @@
             <a class="menu-link" href="#">Menu Item 3</a>
         </div>
     </div>
-
+</div>
+    
     <!-- JavaScript code for toggling the menu -->
       <script>
         function toggleMenu() {
