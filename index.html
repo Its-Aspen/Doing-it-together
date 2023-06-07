@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Grow (Doing it together)</title>
+    <link rel="manifest" href="/manifest.json">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon.ico">
@@ -126,7 +127,17 @@
             // Toggle the class 'show' to display or hide the overlay menu
             overlayMenu.classList.toggle("show");
         }
-    </script>
+
+        window.addEventListener('beforeinstallprompt', (event) => {
+            // Prevent the default browser install prompt
+         event.preventDefault();
+  
+            // Show your custom prompt or instructions
+            // For example:
+         showAddToHomeScreenPrompt();
+            });
+
+    </script>   
 
     <!-- Main content section -->
     <h1></h1>
