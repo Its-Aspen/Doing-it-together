@@ -9,6 +9,7 @@
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
     <meta name="apple-mobile-web-app-title" content="Grow">  
+    <meta name="google-signin-client_id" content="1086758392056-4190hk15v0s6l28891n81dfhsqkcq9bf.apps.googleusercontent.com">
 
     <title>Grow (Doing it together)</title>
 
@@ -22,9 +23,13 @@
 
     </head>
 
-    
+
     <body style="background-color: #7b8d75;">
    
+
+        
+
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
 
         <!-- Main content section -->
         <h1></h1>
@@ -34,6 +39,6 @@
         <p style="text-align: center;">This is page 1</p>
         <h1></h1>
         <h1></h1>
-        <p style="text-align: center;">Login<br>or<br>Create an account</p>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
     </body>
 </html>
